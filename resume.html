@@ -5,8 +5,18 @@
         Resume
     </title>
     <style>
-        body {
+        html {
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .margin {
             margin: 50px;
+            padding: 10px 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px black;
         }
 
         h2 {
@@ -35,146 +45,244 @@
         .right-column {
             width: 75%;
         }
+
         .col1 {
-            float: right;
-            margin-right: 50px;
             width: 10%;
+            justify-content: space-between;
+            padding-left: 85%;
         }
+
         a {
             text-decoration: none;
+            color: #3066be;
+            font-weight: bold;
+        }
+
+        #section1 {
+            padding: 190px 50px;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        #section1,
+        #section2 {
+            background-image: url('mount.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: -8px;
+        }
+
+        #section2 {
+            margin-top: -20px;
+            padding: 10px 50px 50px 50px;
+            color: whitesmoke;
+        }
+
+        .arrow-up {
+            width: 0;
+            height: 0;
+            margin-left: 50%;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid rgb(255, 255, 255);
+        }
+
+        .btn {
+            width: 140px;
+            height: 50px;
+            background: linear-gradient(to top, #00154c, #12376e, #23487f);
+            color: #fff;
+            border-radius: 50px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .btn span {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: top 0.5s;
+        }
+
+        .btn-text-one {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .btn-text-two {
+            position: absolute;
+            width: 100%;
+            top: 150%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        .btn:hover .btn-text-one {
+            top: -100%;
+        }
+
+        .btn:hover .btn-text-two {
+            top: 50%;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h2>DIVYA T</h2>
-    </header>
-    <p>MOBILE NO: +91 6379279704
-    <p>EMAIL ID: divi21146@gmail.com
-    <p>ADDRESS: 236/1,West Street, Vadakarai, Cuddalore(DT), Pincode- 606105
-    <p>LINKEDIN ID: <a
-            href="https://www.linkedin.com/in/divya-thiyagarajan-85603818b/">https://www.linkedin.com/in/divya-thiyagarajan-85603818b/</a>
-    
-    <p>GITHUB ID: <a href="https://github.com/Divya21146">https://github.com/Divya21146</a><br>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>OBJECTIVE</b>
-        </div>
-        <div class="column1 right-column">
-            To acquire a challenging career in an organization to contribute to the company's growth and be an
-                integral part of it.
-        </div>
+    <div class="main1" id="section1">
+        <h1 style="font-size: 35px;">Hi, Welcome Here</h1>
+        <h2 style="font-size: 28px;">I'm Divya</h2>
+        <p style="padding: 10px; font-size: 20px;">It's my resume site.<br><br>
+            You can click the below button for seeing my resume.
+        </p>
+        <a href="#section2"><button class="btn">
+                <span class="btn-text-one">Resume</span>
+                <span class="btn-text-two">Click!</span></button></a>
     </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>PROFESSIONAL SKILLS</b>
+
+    <div class="main2" id="section2">
+        <div class="margin">
+            <h2>DIVYA T</h2>
+            <p>MOBILE NO: +91 6379279704
+            <p>EMAIL ID: divi21146@gmail.com
+            <p>ADDRESS: 236/1,West Street, Vadakarai, Cuddalore(DT), Pincode- 606105
+            <p>LINKEDIN ID: <a
+                    href="https://www.linkedin.com/in/divya-thiyagarajan-85603818b/">https://www.linkedin.com/in/divya-thiyagarajan-85603818b/</a>
+
+            <p>GITHUB ID: <a href="https://github.com/Divya21146">https://github.com/Divya21146</a><br>
+                <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>OBJECTIVE</b>
+                </div>
+                <div class="column1 right-column">
+                    To acquire a challenging career in an organization to contribute to the company's growth and be an
+                    integral part of it.
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>PROFESSIONAL SKILLS</b>
+                </div>
+                <div class="column1 right-column">
+                    HTML, CSS, Javascript, SQL, PHP
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>AREA OF INTEREST</b>
+                </div>
+                <div class="column1 right-column">
+                    Web Development<br>
+                    Cloud Computing
+
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>EDUCATION</b>
+                </div>
+                <div class="column1 right-column">
+                    BTECH (INFORMATION TECHNOLOGY)
+                    <ul>
+                        <li>M.A.M COLLEGE OF ENGINEERING AND TECHNOLOGY - TRICHY - 2023</li>
+                        <li>CGPA: 8.72(<small>TILL</small> 7<small><sup>th</sup> SEMESTER</small>)</li>
+                    </ul>
+
+                    HSC
+                    <ul>
+                        <li>ARUNA HIGHER SECONDARY SCHOOL - ERAIYUR - 2019</li>
+                        <li>Percentage: 67%</li>
+                    </ul>
+
+                    SSLC
+                    <ul>
+                        <li>BHARATHI MATRICULATION SCHOOL - PENNADAM - 2017</li>
+                        <li>Percentage: 84%</li>
+                    </ul>
+
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>CERTIFICATIONS</b>
+                </div>
+                <div class="column1 right-column">
+                    <a
+                        href="https://drive.google.com/drive/folders/1BrRoyhGfPsZQ_rD2n7ZlXI1vtphOGQqf">https://drive.google.com/drive/folders/1BrRoyhGfPsZQ_rD2n7ZlXI1vtphOGQqf</a>
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>PROJECTS</b>
+                </div>
+                <div class="column1 right-column">
+                    Title: Public Complaint Management System<br>
+                    Github project url: <a
+                        href="https://github.com/Divya21146/Public-Complaint-Management-System">https://github.com/Divya21146/Public-Complaint-Management-System</a>
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>LANGUAGES KNOWN</b>
+                </div>
+                <div class="column1 right-column">
+                    Tamil, English
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>OTHER SKILLS</b>
+                </div>
+                <div class="column1 right-column">
+                    Leadership Skills<br>
+                    Communication Skills
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>HOBBIES</b>
+                </div>
+                <div class="column1 right-column">
+                    Writing Novel<br>
+                    Learning Languages (Currently learning Japanese)
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="column left-column">
+                    <b>DECLARATION</b>
+                </div>
+                <div class="column1 right-column">
+                    I hereby declare that the above mentioned information is true to the best of my knowledge.
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div>
+                <div class="col1">
+                    <p>Yours Truly,</p>
+                    <p style="padding-left: 5px;"><small> (DIVYA T)</small></p>
+                </div>
+            </div>
         </div>
-        <div class="column1 right-column">
-            HTML, CSS, Javascript, SQL, PHP
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>AREA OF INTEREST</b>
-        </div>
-        <div class="column1 right-column">
-            Web Development<br>
-            Cloud Computing
-            
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>EDUCATION</b>
-        </div>
-        <div class="column1 right-column">
-            BTECH (INFORMATION TECHNOLOGY)
-                <ul>
-                    <li>M.A.M COLLEGE OF ENGINEERING AND TECHNOLOGY - TRICHY - 2023</li>
-                    <li>CGPA: 8.72(<small>TILL</small> 7<small><sup>th</sup> SEMESTER</small>)</li>
-                </ul>
-            
-            HSC
-                <ul>
-                    <li>ARUNA HIGHER SECONDARY SCHOOL - ERAIYUR - 2019</li>
-                    <li>Percentage: 67%</li>
-                </ul>
-            
-            SSLC
-                <ul>
-                    <li>BHARATHI MATRICULATION SCHOOL - PENNADAM - 2017</li>
-                    <li>Percentage: 84%</li>
-                </ul>
-            
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>CERTIFICATIONS</b>
-        </div>
-        <div class="column1 right-column">
-            <a href="https://drive.google.com/drive/folders/1BrRoyhGfPsZQ_rD2n7ZlXI1vtphOGQqf">https://drive.google.com/drive/folders/1BrRoyhGfPsZQ_rD2n7ZlXI1vtphOGQqf</a>
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>PROJECTS</b>
-        </div>
-        <div class="column1 right-column">
-            Title: Public Complaint Management System<br>
-            Github project url: <a href="https://github.com/Divya21146/Public-Complaint-Management-System">https://github.com/Divya21146/Public-Complaint-Management-System</a>
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>LANGUAGES KNOWN</b>
-        </div>
-        <div class="column1 right-column">
-            Tamil, English
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>OTHER SKILLS</b>
-        </div>
-        <div class="column1 right-column">
-            Leadership Skills<br>
-            Communication Skills
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>HOBBIES</b>
-        </div>
-        <div class="column1 right-column">
-            Writing Novel<br>
-            Learning Languages (Currently learning Japanese)
-        </div>
-    </div>
-    <hr>
-    <div class="col">
-        <div class="column left-column">
-            <b>DECLARATION</b>
-        </div>
-        <div class="column1 right-column">
-            I hereby declare that the above mentioned information is true to the best of my knowledge.
-        </div>
-    </div>
-    <hr>
-    <br>
-    <div class="col1">
-        <p>Yours Truly,</p>
-        <p style="padding-left: 5px;"><small> (DIVYA T)</small></p>
+        <br>
+        <a href="#section1" class="arrow-up"></a>
+        <br><br>
     </div>
 </body>
 
